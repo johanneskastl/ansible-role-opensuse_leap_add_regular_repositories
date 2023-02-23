@@ -13,7 +13,21 @@ None.
 Role Variables
 --------------
 
-None.
+By default, this role enables all of the repos that are enabled on a fresh openSUSE Leap 15.4 installation. In case you want to enable or disable repos, each one has a `..._enabled` variable that can be set to '1' (enabled) or '0' (disabled).
+
+- `repo_oss_enabled`: OSS repository (Default value: `'1'`)
+- `repo_non_oss_enabled`: Non-OSS repository (Default value: `'1'`)
+- `repo_update_oss_enabled`: Updates for the OSS repository (Default value: `'1'`)
+- `repo_update_non_oss_enabled`: Updates for the Non-OSS repository(Default value: `'1'`)
+- `repo_backports_update_enabled`: Updates for the Backports repository (Default value: `'1'`)
+- `repo_sle_update_enabled`: Updates for the SLE repository (Default value: `'1'`)
+- `repo_debug_enabled`: Debug repository (OSS) (Default value: `'0'`)
+- `repo_debug_non_oss_enabled`: Debug repository (Non-OSS) (Default value: `'0'`)
+- `repo_debug_update_enabled`: Updates for the Debug repository (OSS) (Default value: `'0'`)
+- `repo_debug_update_non_oss_enabled`: Updates for the Debug repository (Non-OSS) (Default value: `'0'`)
+- `repo_backports_debug_update_enabled`: Updates for the Backports Debug repository (Default value: `'0'`)
+- `repo_sle_debug_update_enabled`: Updates for the Debug SLE repository (Default value: `'0'`)
+- `repo_source_enabled`: Source repository (Default value: `'0'`)
 
 Dependencies
 ------------
