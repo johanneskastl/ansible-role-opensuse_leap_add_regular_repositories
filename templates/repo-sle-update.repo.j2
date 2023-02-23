@@ -1,0 +1,8 @@
+[repo-sle-update]
+name=Update repository with updates from SUSE Linux Enterprise 15
+enabled={{ repo_sle_update_enabled }}
+autorefresh=1
+baseurl=http://download.opensuse.org/update/leap/{{ releasever }}/sle/
+path=/
+type=rpm-md
+keeppackages=0
